@@ -36,6 +36,7 @@ jobs:
           default_bump: patch
           release_branches: main
           tag_prefix: v
+          initial_version: 1.0.0
 
   # Build and push Docker images
   build-and-push:
@@ -48,7 +49,7 @@ jobs:
 
     strategy:
       matrix:
-        pg_version: ['15', '16', '17', '18']
+        pg_version: ['15', '16', '17']
 
     steps:
       - name: Checkout repository
