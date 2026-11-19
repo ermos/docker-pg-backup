@@ -2,6 +2,8 @@ module github.com/ermos/docker-pg-backup
 
 go 1.25.5
 
+toolchain go1.26.11
+
 require (
 	github.com/ermos/backuprunner v1.0.2
 	github.com/ermos/dotenv v1.2.1
